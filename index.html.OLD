@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/index.css" type="text/css">
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+    <link rel="shortcut icon" href="/assets/img/icon.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            // Carrega o header.html e insere no placeholder do header
+            $.get("/components/header.html", function(data) {
+                $("#header").html(data);
+            });
+    
+            // Carrega o footer.html e insere no placeholder do footer
+            $.get("/components/footer.html", function(data) {
+                $("#footer").html(data);
+            });
+        });
+    </script>
+    <title>Verkom</title>
+</head>
+<body>
+    <!-- <header>
+        <div id="header"></div>
+    </header> -->
+<br><br><br>
+  <section class="hero-banner position-relative overflow-hidden">
+    <div class="container">
+      <div class="row d-flex flex-wrap align-items-center">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+          <div class="position-relative left-hero-color">
+            <h1 class="mb-0 fw-bold text-sm-start">Com tecnologia transformamos desafios em oportunidades</h1>
+            <p>Para um futuro digital, seguro, avançado e inteligente</p>
+            <a href="/pages/contact.html" class="btn btn-warning btn-hover-secondery">Entre em contato</a>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+          <div class="position-relative right-hero-color">
+            <img src="/assets/img/equipe.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="service position-relative overflow-hidden">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-12"><small class="fs-7 d-block">Soluções</small></div>
+        <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center">
+          <h2 class="fs-2 text-black mb-0">
+            Principais Serviços <br>
+            Fornecidos
+          </h2>
+          <a href="/pages/maintenance.html" class="btn btn-warning btn-hover-secondery section-btn">Todos os serviços</a>
+        </div>
+      </div>
+      <div class="row d-flex flex-wrap justify-content-center step-row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card border-0 shadow">
+            <div class="card-body">
+              <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                <i class="fa fa-file text-white text-primary position-relative"></i>
+              </div>
+              <h3 class="fs-4">Backup em Nuvem</h3>
+              <p class="fs-7 mb-0 fw-500">Aprimoramos a replicação de múltiplas cópias para atender a diversos destinos, empregando uma variedade de tecnologias especializadas. Eficiente na proteção contra ransomwares.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card border-0 shadow">
+            <div class="card-body">
+              <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                <i class="fas fa-cloud text-white text-primary position-relative"></i>
+              </div>
+              <h3 class="fs-4">Cloud & Infraestrutura</h3>
+              <p class="fs-7 mb-0 fw-500">Implementação de uma infraestrutura resiliente de Cloud Híbrida e Privada, potencializada pelo uso da tecnologia SD-WAN. Essa solução robusta oferece uma combinação ideal de flexibilidade, desempenho e segurança, garantindo uma conectividade confiável em ambientes diversos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card border-0 shadow">
+            <div class="card-body">
+              <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                <i class="fas fa-lock text-white text-primary position-relative"></i>
+              </div>
+              <h3 class="fs-4">Segurança da Informação</h3>
+              <p class="fs-7 mb-0 fw-500">Oferecemos tecnologia de ponta sem custo de aquisição, disponibilizando firewalls em comodato de forma acessível. Essa abordagem inovadora permite acesso às mais avançadas soluções de segurança sem exigir um investimento inicial significativo, proporcionando proteção robusta para sua rede com um modelo de pagamento flexível. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-service position-relative overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-8 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <img src="/assets/img/sandro.webp" class="img-fluid" />
+        </div>
+        <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ps-xxl-0 ps-xl-0 ps-lg-3 ps-md-3 ps-sm-3 ps-3">
+          <small class="fs-7 d-block">CEO</small>
+          <h2 class="fs-2 text-black mb-0">Sandro Consoli</h2>
+          <p class="mb-0 fw-500 fs-7">"Nosso objetivo é oferecer soluções de cibersegurança de alta qualidade para empresas de todos os portes e setores da economia. Estamos confiantes de que podemos contribuir para a segurança digital do município e região. Em nosso slogan enfatizamos que as ‘Inovações garantem um futuro digital, seguro, avançado e inteligente’, e é nisso que acreditamos” </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="portfolio position-relative bg-white">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-12"><small class="fs-7 d-block text-warning">Clientes</small></div>
+        <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center">
+          <h2 class="fs-3 text-black mb-0">
+            Cases de Sucesso
+          </h2>
+          <a href="/pages/maintenance.html" class="btn btn-warning btn-hover-secondery section-btn">Outros Cases</a>
+        </div>
+      </div>
+      <div class="row d-flex flex-wrap justify-content-center step-row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i class="fa fa-crown text-white"></i></div>
+              <h3 class="fs-4">Sicoob Paulista</h3>
+              <p class="fs-7 mb-0 fw-500">Primeira cooperativa de crédito de empresários da regiçao de Presidente Prudente. Somando hoje mais de 18 mil cooperados, ultrapassa o valor de 900 milhões de ativos e mais de 250 colaboradores distribuídos em 24 postos de atendimento no estado de São Paulo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i class="fa fa-crown text-white"></i></div>
+              <h3 class="fs-4">FTW</h3>
+              <p class="fs-7 mb-0 fw-500">O Laboratório Fitoway, em Tarumã, São Paulo, produz suplementos alimentares e nutrição esportiva de alta qualidade. Fundada em 2003, a empresa oferece uma variedade de produtos seguros e satisfatórios para diferentes públicos, com foco na qualidade e no respeito ao meio ambiente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i class="fa fa-crown text-white"></i></div>
+              <h3 class="fs-4">Grupo Mello</h3>
+              <p class="fs-7 mb-0 fw-500">O Grupo Mello é um grupo varejista focado na comercialização de calçados e acessórios, sediado na cidade de Assis e presente em mais 05 cidades na regão: Botucatu, Cândido Mota, Londrina, Ourinhos e Presidente Prudente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="footer"></div>
+</body>
+</html>
